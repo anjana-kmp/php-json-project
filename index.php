@@ -8,11 +8,17 @@
         echo $filesize;
         $filecontents = fread($file, $filesize);
         fclose($file);
+        echo "<ul>";
+        foreach(json_decode($filecontents)->Maharashtra as $st){
+            echo "<li>$st</li>";
+        }
+        echo "</ul>";
         echo "$filecontents";
         
         echo '<h3>Display an input box to add states</h3>';
-        echo '<form action="save.php"><input name =states/><br><button>Add</button></form>';
-        print_r(array_values(json_decode($filecontents)->Maharashtra)) ;
+        echo '<form action="save.php" method="POST"><input name="states"><br><button>Add</button></form>';
+        print_r(array_values(json_decode($filecontents)->Maharashtra));
+        
 
         
 
