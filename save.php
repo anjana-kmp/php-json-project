@@ -9,16 +9,14 @@
         if(!in_array($gotvars,$states)){
             array_push($states,$gotvars);
             $canpush = true;
-            foreach($states as $st){
-                if(in_array($st,)){
-                    
-                }
-            }
+            
         }
+    
        
         $filecontent->Maharashtra=$states;
         fwrite($file,json_encode($filecontent));
         fclose($file);
         header('location:index.php');
     } 
+    
 ?>

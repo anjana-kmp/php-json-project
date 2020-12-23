@@ -1,0 +1,18 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+i{
+    background-image: url(./images/delete.svg);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+span{
+    width: 200px;
+    display: inline-block;
+    font-size: 1.25em;
+
+}
+li{
+    list-style: none;
+}
